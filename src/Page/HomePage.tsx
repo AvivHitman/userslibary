@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import AddUser from "../Components/addUser/AddUser";
 import UsersList from "../Components/usersList/UsersList";
 import { Home } from "./Homepage.style";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
@@ -27,7 +26,6 @@ const HomePage = () => {
     <Home>
       <Title theme={{ fontSize: "40px" }}>Users Libary</Title>
       <Search onSearch={hansleOnSearch} />
-      <AddUser />
       {status === "loading" ? (
         <div>Loading...</div>
       ) : status === "failed" ? (

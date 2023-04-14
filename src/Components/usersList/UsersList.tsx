@@ -1,4 +1,5 @@
 import { User } from "../../types";
+import AddUser from "../addUser/AddUser";
 import UserCard from "../userCard/UserCard";
 import { CardList } from "./UsersList.style";
 
@@ -8,11 +9,14 @@ type UserListProps = {
 
 const UsersList = ({ users }: UserListProps) => {
   return users.length !== 0 ? (
-    <CardList>
-      {users?.map((user: User) => (
-        <UserCard key={user.uuid} user={user} />
-      ))}
-    </CardList>
+    <>
+      <AddUser />
+      <CardList>
+        {users?.map((user: User) => (
+          <UserCard key={user.uuid} user={user} />
+        ))}
+      </CardList>
+    </>
   ) : (
     <div>There is no users to display</div>
   );

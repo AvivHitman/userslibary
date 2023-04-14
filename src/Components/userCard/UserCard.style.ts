@@ -4,7 +4,7 @@ import { EditAlt } from "@styled-icons/boxicons-regular/EditAlt";
 
 const Card = styled.div`
   margin: 10px;
-  width: 70%;
+  width: 50%;
   height: 70%;
   box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
   border-radius: 6px;
@@ -16,6 +16,7 @@ const Card = styled.div`
     border-radius: 50%;
     object-fit: cover;
     display: flex;
+    width: 7vw;
   }
 `;
 
@@ -27,12 +28,12 @@ const Content = styled.div`
 const Info = styled.div`
   h3 {
     margin: 0;
-    font-size: 12px;
+    font-size: 1vw;
     color: #706f6f;
   }
 
   h2 {
-    font-size: 14px;
+    font-size: 1.2vw;
     color: black;
     font-weight: bold;
   }
@@ -47,8 +48,8 @@ const DeleteIcon = styled(Delete)`
   :hover {
     cursor: pointer;
   }
-  padding: 6px;
-  width: 20px;
+  padding: 0.6vw;
+  width: 1.8vw;
   color: grey;
 `;
 
@@ -56,8 +57,8 @@ const EditIcon = styled(EditAlt)`
   :hover {
     cursor: pointer;
   }
-  padding: 6px;
-  width: 20px;
+  padding: 0.6vw;
+  width: 1.8vw;
   color: grey;
 `;
 
