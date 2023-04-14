@@ -11,7 +11,7 @@ const Button = styled.button`
 
 const Title = styled.h1`
   font-weight: bold;
-  font-size: ${(props) => props.theme.fontSize || "1px"};
+  font-size: ${(props) => props.theme.fontSize || "10px"};
 `;
 
 export { Button, Title };

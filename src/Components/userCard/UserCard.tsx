@@ -23,7 +23,7 @@ const UserCard = ({ user }: UserProps) => {
 
   return (
     <Card>
-      <img src={user.picture} alt={user.uuid} />
+      <img src={user.picture} alt="" />
       <Content>
         <Info>
           <h2>

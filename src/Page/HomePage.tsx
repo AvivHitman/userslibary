@@ -24,7 +24,7 @@ const HomePage = () => {
 
   return (
     <Home>
-      <Title theme={{ fontSize: "40px" }}>Users Library</Title>
+      <Title theme={{ fontSize: "3.5vw" }}>Users Library</Title>
       <Search onSearch={hansleOnSearch} />
       {status === "loading" ? (
         <div>Loading...</div>
